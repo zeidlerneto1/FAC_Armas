@@ -73,7 +73,7 @@ string ok;
 void receitas() {
 string ok;
     do {
-        cout << "TABELA DE PREÇOS DE ARMAS" << endl;
+        cout << "TABELA DE PRECOS DE ARMAS" << endl;
         cout << "FUZIL SUPERIOR CANO=10 MOLA=11 X2" << endl;
         cout << "FUZIL INFERIOR PRATA=12 GATILHO=4 X2" << endl;
         cout << "TEC-9 SUPERIOR CANO=3 MOLA=6" << endl;
@@ -98,7 +98,7 @@ string ok;
 void listarP() {
     string ok;
     do {
-        cout << "TABELA DE PREÇOS DE ARMAS" << endl;
+        cout << "TABELA DE PRECOS DE ARMAS" << endl;
         cout << "PISTOLA 180k 200k" << endl;
         cout << "SMG 270k 300k" << endl;
         cout << "FUZIL 405k 450k" << endl;
