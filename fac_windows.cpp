@@ -64,9 +64,10 @@ string ok;
     do
     {
     cout << "Lista de Armas" << endl;
-    cout << "PISTOLA:HK,CERAMIC,FIVE SEVEM, TEC-9";
-    cout << "SMG MK2 ,MTAR ,UZI";
-    cout << "FUZIL AK-47,G36";
+    cout << "PISTOLA:HK,CERAMIC,FIVE SEVEM, TEC-9" << endl;
+    cout << "SMG MK2 ,MTAR ,UZI" << endl;
+    cout << "FUZIL AK-47,G36" << endl;
+    cout << "Digite 'ok' para sair: ";
         cin >> ok;
     } while (ok != "ok");
 }
@@ -129,7 +130,7 @@ Arma guns(0, 0, 0, 0);
             break;
         case 3:
             cout << "LISTANDO ARMAS..." << endl;
-            void armas();
+            armas();
             break;
         case 4:
             cout << "inserindo valores..." << endl;
