@@ -29,7 +29,8 @@ int Tgatilhos,Tcanos,Tmolas,Tprata,Tairsoft;
     cout << "Canos: " << Tcanos << endl;
     cout << "Molas: " << Tmolas << endl;
     cout << "Prata: " <<Tprata;
-    return 0;
+    cout << "saindo para principal " << endl;
+    return 1;
 }
 
 Arma::Arma(int canos, int molas, int gatilhos, int prata) {
@@ -97,7 +98,7 @@ string ok;
 }
 
 void listarP() {
-    string ok;
+string ok;
     do {
         cout << "TABELA DE PRECOS DE ARMAS" << endl;
         cout << "PISTOLA 180k 200k" << endl;
@@ -110,6 +111,8 @@ void listarP() {
 
 int main() {
 Arma guns(0, 0, 0, 0);
+while (1)
+{
     int opcao;
     while (1) {
         cout << "1- Listar precos" << endl;
@@ -156,7 +159,8 @@ Arma guns(0, 0, 0, 0);
             break;
         default:
             break;
+            }  
+        }
     }
-    return 0;
-  }
+return 0;
 }
