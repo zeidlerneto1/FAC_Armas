@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -108,6 +109,25 @@ string ok;
         cin >> ok;
     } while (ok != "ok");
 }
+void valorfinal(){
+string ok;
+    do
+    {
+        int valormax;
+        float porcentagem,calc;
+        cout << "USANDO A TABELA DE PREÇOS DE ARMAS" << endl;
+        cout << "usando * 0,90 0,95 1,00 pra calcular dentro da tebela" << endl;
+        cout << "Digite o valor maximo da arma: ";
+        cin >> valormax;
+        cout << "Digite a Porcentagem: ";
+        cin >> porcentagem;
+        calc = valormax * porcentagem;
+        cout << fixed << setprecision(2);
+        cout << "Valor a ser cobrado: " << calc << " na porcetagem " << porcentagem << endl;
+        cout << "Digite 'ok' para sair: ";
+        cin >> ok;
+    } while (ok != "ok");
+}
 
 int main() {
 Arma guns(0, 0, 0, 0);
@@ -119,7 +139,8 @@ while (1)
         cout << "2- Receita das armas x1" << endl;
         cout << "3- Listar Armas" << endl;
         cout << "4- Calcular quantidade de materiais" << endl;
-        cout << "5- Sair" << endl;
+        cout << "5- Calcular Valor Final de Venda" << endl;
+        cout << "6- Sair" << endl;
         cin >> opcao;
 
     switch (opcao) {
@@ -155,6 +176,9 @@ while (1)
             guns.setQTDarma(qtd);
             guns.calculo();
         case 5:
+            valorfinal();
+            break;
+        case 6:
             return 0;
             break;
         default:
