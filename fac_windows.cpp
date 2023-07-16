@@ -29,9 +29,9 @@ int Tgatilhos,Tcanos,Tmolas,Tprata,Tairsoft;
     cout << "Gatilho: "<< Tgatilhos << endl; 
     cout << "Canos: " << Tcanos << endl;
     cout << "Molas: " << Tmolas << endl;
-    cout << "Prata: " <<Tprata;
+    cout << "Prata: " <<Tprata << endl;
     cout << "saindo para principal " << endl;
-    return 1;
+    return 0;
 }
 
 Arma::Arma(int canos, int molas, int gatilhos, int prata) {
@@ -65,10 +65,13 @@ void armas(){
 string ok;
     do
     {
-    cout << "Lista de Armas" << endl;
-    cout << "PISTOLA:HK,CERAMIC,FIVE SEVEM, TEC-9" << endl;
-    cout << "SMG MK2 ,MTAR ,UZI" << endl;
-    cout << "FUZIL AK-47,G36" << endl;
+    cout << "-----------------------------"<< endl;
+    cout << "|Lista de Armas              |"<< endl;
+    cout << "|PISTOLA->";
+    cout << "HK,FIVE SEVEM      |"<< endl;
+    cout << "|SMG -> MK2 ,MTAR ,UZI,TEC-9 |"<< endl;
+    cout << "|FUZIL -> AK-47,G36          |"<< endl;
+    cout << "-----------------------------"<< endl;
     cout << "Digite 'ok' para sair: ";
         cin >> ok;
     } while (ok != "ok");
@@ -76,24 +79,42 @@ string ok;
 void receitas() {
 string ok;
     do {
-        cout << "TABELA DE PRECOS DE ARMAS" << endl;
-        cout << "FUZIL SUPERIOR CANO=10 MOLA=11 X2" << endl;
-        cout << "FUZIL INFERIOR PRATA=12 GATILHO=4 X2" << endl;
-        cout << "TEC-9 SUPERIOR CANO=3 MOLA=6" << endl;
-        cout << "TEC-9 INFERIOR PRATA=6 GATILHO=4" << endl;
-        cout << "HK SUPERIOR CANO=2 PRATA=4" << endl;
-        cout << "HK INFERIOR  prata= 6 gatilho=2" << endl;
-        cout << "CEREMAICA SUPERIORcano=3 mola=5" << endl;
-        cout << "CERAMICA INFERIOR prata=7 gatilho=2" << endl;
-        cout << "FIVE SEVEM SUPEIROR cano =3 mola =5" << endl;
-        cout << "FIVE SEVEM INFERIOR prata=6 gatilho =2" << endl;
-        cout << "SMG SUPERIOR CANO =4 MOLA =8" << endl;
-        cout << "SMG INFERIOR BRONZE=8 GATILHO=3" << endl;
-        cout << "MTAR SUPEIROR CANO=5 MOLA=9" << endl;
-        cout << "MTAR INFERIOR BRONZE=10 GATILHO=3" << endl;
-        cout << "UZI SUPEIROR CANO=4 MOÇA =8" << endl;
-        cout << "UZI INFEIROR BRONZE=8 GATILHO=3" << endl;
-        cout << "Digite 'ok' para sair: ";
+    cout << left << setw(15) << "Arma";
+    cout << left << setw(25) << "Superior";
+    cout << left << setw(15) << "Inferior" << endl;
+
+    cout << left << setw(15) << "FUZIL";
+    cout << left << setw(25) << "CANO=10 MOLA=11";
+    cout << left << setw(15) << "PRATA=12 GATILHO=4" << endl;
+
+    cout << left << setw(15) << "TEC-9";
+    cout << left << setw(25) << "CANO=3 MOLA=6";
+    cout << left << setw(15) << "PRATA=6 GATILHO=4" << endl;
+
+    cout << left << setw(15) << "HK";
+    cout << left << setw(25) << "CANO=2 PRATA=4";
+    cout << left << setw(15) << "PRATA=6 GATILHO=2" << endl;
+
+    cout << left << setw(15) << "CERAMICA";
+    cout << left << setw(25) << "CANO=3 MOLA=5";
+    cout << left << setw(15) << "PRATA=7 GATILHO=2" << endl;
+
+    cout << left << setw(15) << "FIVE SEVEM";
+    cout << left << setw(25) << "CANO=3 MOLA=5";
+    cout << left << setw(15) << "PRATA=6 GATILHO=2" << endl;
+
+    cout << left << setw(15) << "SMG";
+    cout << left << setw(25) << "CANO=4 MOLA=8";
+    cout << left << setw(15) << "BRONZE=8 GATILHO=3" << endl;
+
+    cout << left << setw(15) << "MTAR";
+    cout << left << setw(25) << "CANO=5 MOLA=9";
+    cout << left << setw(15) << "BRONZE=10 GATILHO=3" << endl;
+
+    cout << left << setw(15) << "UZI";
+    cout << left << setw(25) << "CANO=4 MOLA=8";
+    cout << left << setw(15) << "BRONZE=8 GATILHO=3" << endl;
+    cout << "Digite 'ok' para sair: ";
         cin >> ok;
     } while (ok != "ok");
 }
@@ -101,10 +122,12 @@ string ok;
 void listarP() {
 string ok;
     do {
-        cout << "TABELA DE PRECOS DE ARMAS" << endl;
-        cout << "PISTOLA 180k 200k" << endl;
-        cout << "SMG 270k 300k" << endl;
-        cout << "FUZIL 405k 450k" << endl;
+        cout << "-----------------------------"<< endl;
+        cout <<"|TABELA DE PRECOS DE ARMAS  |" << endl;
+        cout <<"|PISTOLA -> 180k 200k       |" << endl;
+        cout <<"|SMG -> 270k 300k           |" << endl;
+        cout <<"|FUZIL -> 405k 450k         |" << endl;
+        cout <<"-----------------------------" << endl;
         cout << "Digite 'ok' para sair: ";
         cin >> ok;
     } while (ok != "ok");
@@ -116,7 +139,7 @@ string ok;
         int valormax;
         float porcentagem,calc;
         cout << "USANDO A TABELA DE PREÇOS DE ARMAS" << endl;
-        cout << "usando * 0,90 0,95 1,00 pra calcular dentro da tebela" << endl;
+        cout << "usando * 0.90, 0.95, 1.00 pra calcular dentro da tebela" << endl;
         cout << "Digite o valor maximo da arma: ";
         cin >> valormax;
         cout << "Digite a Porcentagem: ";
@@ -175,6 +198,7 @@ while (1)
             cin >> qtd;
             guns.setQTDarma(qtd);
             guns.calculo();
+            break;
         case 5:
             valorfinal();
             break;
