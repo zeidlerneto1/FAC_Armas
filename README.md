@@ -1,9 +1,4 @@
-# FAC_los_blancos
+# FAC_Armas
 PROGRAMA DE AUXILIO PARA TRAFICANTE DE ARMA NO SERVIDOR FLOW RP 
 
-
-1- Porque tem dois codigos ?
-  R: porque uma biblioteca nao estava funcionando no windows ai tirei para finalmente codar.
-
-  use o programa com fac_windows.exe
-
+aqui foi um miniprojeto que tive ideia por sentir falta de um programa para me ajudar nessas tarefas e vi uma forma de execitar minhas habilidades em programação (estou ainda estudando)
